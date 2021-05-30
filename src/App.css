@@ -1,0 +1,32 @@
+*{
+  scroll-behavior: smooth;
+}
+.app{
+  min-height: 100vh;
+  background: #141414;
+  color: white;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+@media (max-width: 700px){
+  .app {
+    padding-top: 7.2vh;
+  }
+}
+
+.page-title{
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  font-family: 'montserrat' sans-serif;
+  font-size: 2.4rem;
+  font-weight: 100;
+  padding: 2%;
+}
+
+.MuiPagination-ul{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
