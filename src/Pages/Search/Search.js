@@ -44,8 +44,8 @@ const Search = () => {
 
     return (
         <div>
-        <div className='centered'>
-                <ThemeProvider theme={darkTheme}>
+            <ThemeProvider theme={darkTheme}>
+                <div className='centered'>
                     <div className="search">
                         <TextField
                             style={{ flex: 1 }}
@@ -62,6 +62,8 @@ const Search = () => {
                             <SearchIcon fontSize="large" />
                         </Button>
                     </div>
+                </div>
+                <div className='centered'>
                     <Tabs
                         value={type}
                         indicatorColor="primary"
@@ -76,8 +78,8 @@ const Search = () => {
                         <Tab style={{ width: "50%" }} label="Search Movies" />
                         <Tab style={{ width: "50%" }} label="Search TV Series" />
                     </Tabs>
-                </ThemeProvider>
-            </div>
+                </div>
+            </ThemeProvider>
             <div className="trending">
                 {content &&
                     content.map((c) => (
