@@ -49,7 +49,7 @@ const Movies = () => {
                                 media_type='Movie'
                                 vote_average={c.vote_average}
                             />
-                        <div style={{margin:'10px 0'}}>
+                        </div>
                     ))
                 }
             </div>
