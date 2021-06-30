@@ -13,10 +13,10 @@ const SingleContent = ({
     vote_average
 }) => {
     return (
-        <ContentModal media_type={media_type} id={id} >
+        <ContentModal media_type={media_type} id={id}>
             <Badge badgeContent={vote_average} color={vote_average > 6 ? 'secondary' : 'primary'}></Badge>
             <img className="poster" src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
-            <b className="title">{title}</b>
+            <h1 className="title">{title}</h1>
             <span className="subtitle">
                 {media_type === 'tv' ? 'TV Show' : 'Movie'}
                 <span className="subtitle">

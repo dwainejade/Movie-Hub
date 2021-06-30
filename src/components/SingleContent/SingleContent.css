@@ -6,7 +6,7 @@
   margin: 0.1rem;
   background: #282c34;
   border-radius: 10px;
-  color: white;
+  color: black;
   position: relative;
   font-family: "montserrat" sans-serif;
 }
@@ -29,7 +29,7 @@
   width: 100%;
   text-align: center;
   font-size: 1rem;
-  padding: 8px 0;
+  padding: 0;
 }
 
 .subtitle {
@@ -37,4 +37,9 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0 3px 3px 3px;
+}
+
+.media-card{
+  margin: 20px 0;
+  padding: 20px;
 }
