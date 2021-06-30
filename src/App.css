@@ -30,3 +30,8 @@
   justify-content: center;
   width: 100%;
 }
+
+.centered{
+  display: flex;
+  justify-content: center;
+}
