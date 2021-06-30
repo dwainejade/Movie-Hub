@@ -26,7 +26,7 @@ const Trending = () => {
     return (
         <div>
             <span className="page-title">Trending</span>
-            <div className="trending">
+            <div className="trending" style={{margin:'10px 0'}}>
                 {
                     content && content.map((c) =>(
                         <SingleContent key={c.id} 
