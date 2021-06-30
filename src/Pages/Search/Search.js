@@ -83,15 +83,17 @@ const Search = () => {
             <div className="trending">
                 {content &&
                     content.map((c) => (
-                        <SingleContent
-                            key={c.id}
-                            id={c.id}
-                            poster={c.poster_path}
-                            title={c.title || c.name}
-                            date={c.first_air_date || c.release_date}
-                            media_type={type ? "tv" : "movie"}
-                            vote_average={c.vote_average}
-                        />
+                        <div style={{margin:'10px 0'}}>
+                            <SingleContent
+                                key={c.id}
+                                id={c.id}
+                                poster={c.poster_path}
+                                title={c.title || c.name}
+                                date={c.first_air_date || c.release_date}
+                                media_type={type ? "tv" : "movie"}
+                                vote_average={c.vote_average}
+                            />
+                        </div>
                     ))}
                 {searchText &&
                     !content &&
