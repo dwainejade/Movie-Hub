@@ -39,15 +39,17 @@ const Movies = () => {
             <div className="trending">
                 {
                     content && content.map((c) => (
-                        <SingleContent key={c.id}
-                            id={c.id}
-                            poster={c.poster_path}
-                            title={c.title}
-                            overview={c.overview}
-                            date={c.release_date}
-                            media_type='Movie'
-                            vote_average={c.vote_average}
-                        />
+                        <div style={{margin:'10px 0'}}>
+                            <SingleContent key={c.id}
+                                id={c.id}
+                                poster={c.poster_path}
+                                title={c.title}
+                                overview={c.overview}
+                                date={c.release_date}
+                                media_type='Movie'
+                                vote_average={c.vote_average}
+                            />
+                        <div style={{margin:'10px 0'}}>
                     ))
                 }
             </div>
